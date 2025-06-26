@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header,
+footer {
+  background: #1b2b34;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  color: #21df85;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  padding: 2em;
+}
+form input,
+form button {
+  margin: 0.2em;
+  padding: 0.4em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+th,
+td {
+  border: 1px solid #cccccc;
+  padding: 0.5em;
+  text-align: left;
+}
+button {
+  background: #21df85;
+  border: none;
+  color: #1b2b34;
+  padding: 0.4em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  main {
+    padding: 1em;
+  }
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  th,
+  td {
+    padding: 0.5em 0;
+  }
+}
