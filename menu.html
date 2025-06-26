@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu - MOS Burgers</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <h1>Menu Management</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Add Food Item</h2>
+        <form id="addItemForm">
+          <input type="text" id="itemCode" placeholder="Item Code" required />
+          <input type="text" id="itemName" placeholder="Item Name" required />
+          <input type="number" id="itemPrice" placeholder="Price" required />
+          <input
+            type="number"
+            id="itemDiscount"
+            placeholder="Discount (%)"
+            min="0"
+            max="100"
+          />
+          <input type="date" id="itemExpiry" />
+          <button type="submit">Add Item</button>
+        </form>
+      </section>
+      <section>
+        <h2>Food Items List</h2>
+        <table id="itemsTable">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Discount</th>
+              <th>Expiry</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Items here -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>© 2025 MOS Burgers</footer>
+    <script src="js/store.js"></script>
+  </body>
+</html>
